@@ -1,0 +1,132 @@
+body {
+  color: #ffffff;
+  background: #ffffff;
+  font-size: 18px;
+  line-height: 1.3;
+  min-width: 320px;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  background: #3c434d;
+}
+
+.logo {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+  display: inline-block;
+  float: left;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 33px 62px 31px;
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  background: url(../images/logo.png) no-repeat 0 0;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 34px;
+  left: 25px;
+}
+
+.main-nav {
+  list-style: none;
+  margin: 0;
+  padding: 90px 0 17px;
+  text-align: center;
+  position: relative;
+}
+@media screen and (min-width: 1114px) {
+  .main-nav {
+    padding: 26px 0 16px;
+  }
+}
+.main-nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 4px 0 3px;
+}
+@media screen and (min-width: 1114px) {
+  .main-nav li {
+    display: inline-block;
+  }
+}
+.main-nav li a {
+  text-decoration: none;
+  color: #80909c;
+  font-weight: 500;
+  padding: 4px 14px 6px 14px;
+}
+.main-nav li a:hover {
+  color: #ffffff;
+}
+.main-nav li .profile {
+  color: #ffffff;
+}
+.main-nav li .profile-image {
+  border-radius: 50%;
+  vertical-align: middle;
+  horiz-align: right;
+}
+
+.main-block {
+  background: url(../images/main-pic.jpg) no-repeat 0 0;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.main-text {
+  text-align: center;
+  padding: 30px 0;
+}
+@media screen and (min-width: 980px) {
+  .main-text {
+    padding: 107px 156px 120px;
+  }
+}
+.main-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0 0 5px 0;
+}
+@media screen and (min-width: 980px) {
+  .main-text h1 {
+    padding: 0px 6px;
+  }
+}
+.main-text p {
+  padding: 15px 35px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 40px 0;
+}
+.main-text p span {
+  font-size: 16px;
+}
+
+.blue-button, .transparent-button {
+  padding: 20px 40px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  color: #ffffff;
+  margin: 0 0 0 36px;
+}
+
+.blue-button {
+  background: #629fd1;
+  border: 1px solid #629fd1;
+}

@@ -1,0 +1,55 @@
+header
+  background: $header-bg
+
+.logo
+  font-size: 28px
+  margin: 0
+  font-weight: 700
+  display: inline-block
+  float: left
+  color: $main-color
+  text-decoration: none
+  padding: 33px 62px 31px
+  position: relative
+
+.logo::before
+  content: ""
+  background: url(../images/logo.png) no-repeat 0 0
+  position: absolute
+  height: 30px
+  width: 30px
+  top: 34px
+  left: 25px
+
+.main-nav
+  list-style: none
+  margin: 0
+  padding: 90px 0 17px
+  text-align: center
+  position: relative
+  +lg
+    padding: 26px 0 16px
+  & li
+    display: inline-block
+    +lg
+      display: inline-block
+    margin: 0
+    padding: 0 4px 0 3px
+    & a
+      text-decoration: none
+      color: #80909c
+      font-weight: 500
+      padding: 4px 14px 6px 14px
+    & a:hover
+      color: $main-color
+    & .profile
+      color: $main-color
+    & .profile-image
+      border-radius: 50%
+      vertical-align: middle
+      horiz-align: right
+
+
+
+
+

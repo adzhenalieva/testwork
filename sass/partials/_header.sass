@@ -2,15 +2,8 @@ header
   background: $header-bg
 
 .logo
-  font-size: 28px
-  margin: 0
-  font-weight: 700
-  display: inline-block
+  +a
   float: left
-  color: $main-color
-  text-decoration: none
-  padding: 33px 62px 31px
-  position: relative
 
 .logo::before
   content: ""
@@ -48,6 +41,8 @@ header
       border-radius: 50%
       vertical-align: middle
       horiz-align: right
+      height: 55px
+      width: 55px
 
 
 

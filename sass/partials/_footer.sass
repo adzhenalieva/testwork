@@ -1,0 +1,75 @@
+footer
+  background: $header-bg
+  padding: 17px 0 5px
+  color: #80909c
+
+.footer
+  display: flex
+  flex-wrap: wrap
+  margin: 0 15px 80px
+
+.footer-div
+  width: 100%
+  +tablet
+    width: 23%
+
+.footer-div-1
+  width: 100%
+  +tablet
+    width: 50%
+
+.footer-form
+  & input
+    padding: 15px 25px
+    color: #b2c1cc
+    border: 1px solid #b2c1cc
+    border-radius: 3px
+    background: transparent
+  & button
+    +button($blue-button, $blue-button, $main-color)
+    padding: 15px 40px
+
+.footer-logo
+  +a
+
+.footer-logo::before
+  content: ""
+  background: url(../images/logo-blue.png) no-repeat 0 0
+  position: absolute
+  height: 30px
+  width: 30px
+  top: 34px
+  left: 25px
+
+.footer-subtitle
+  color: $main-color
+  font-size: 20px
+
+.footer-link
+  display: block
+  text-decoration: none
+  color: #80909c
+  margin: 0 0 10px 0
+
+.footer-icons
+  margin-bottom: 20px
+  +tablet
+    float: right
+    margin-right: 196px
+    margin-bottom: 0
+
+%social-media
+  display: inline-block
+  padding: 0 20px
+  width: 20px
+  height: 25px
+  background-image: url(../images/icons.png)
+  background-repeat: no-repeat
+
+$positions: (vk: -130px -18px, fb: -18px -17px, tw: -195px -21px, lk: -83px -17px)
+
+@each $icons, $poz in $positions
+  .icon-#{$icons}
+    @extend %social-media
+    background-position: $poz
+

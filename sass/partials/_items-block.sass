@@ -1,2 +1,60 @@
 .items-wrap
-  border: 1px solid #dee4ea
+  border-top: 1px solid #dee4ea
+  border-bottom: 1px solid #dee4ea
+  padding: 67px 0
+
+.items
+  color: #80909c
+  display: flex
+  flex-wrap: wrap
+  margin: 0 15px
+
+.item
+  padding: 45px 15px 15px
+  margin: 0 15px 25px 15px
+  position: relative
+  line-height: 1.7
+  width: 100%
+  +tablet
+    width: 45%
+    padding: 0 55px 0
+    margin: 0 15px 5px 15px
+  & p
+    margin: 14px 0
+    font-weight: 400
+    font-size: 18px
+.item-icon
+  position: absolute
+  font-size: 45px
+  color: #629fd1
+  top: 0
+  left: 50%
+  margin-left: -30px
+  font-family: 'Font Awesome 5 Free'
+  font-weight: 900
+  +lg
+    top: 27px
+    left: 0
+.item-icon-1
+  &::before
+    content: "\f0b1"
+.item-icon-2
+  &::before
+    content: "\f108"
+.item-icon-3
+  &::before
+    content: "\f027"
+.item-icon-4
+  &::before
+    content: "\f1eb"
+.items-title
+  color: $titles
+  font-size: 48px
+  text-align: center
+  margin: 40px 0 34px
+
+
+.items-subtitle
+  color: $titles
+  font-size: 20px
+  margin-bottom: 0

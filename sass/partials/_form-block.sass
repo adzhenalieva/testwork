@@ -10,7 +10,7 @@
   +lg
     width: 570px
   & .form-row
-    margin: 30px auto
+    margin: 25px auto
     width: 100%
     +lg
       width: 49%
@@ -35,8 +35,13 @@
       appearance: none !important
     & select::-ms-expand
       display: none
-.checkbox-div a
-  color: $blue-button
+.checkbox-div
+  margin-bottom: 70px
+  & a
+    color: $blue-button
+  & p
+    margin: 6px auto 36px
+    font-weight: 300
 .checkbox
   display: none
   & + label span
@@ -52,6 +57,7 @@
 .form-box-title
   color: $titles
   font-size: 36px
+  margin: 25px auto
 
 .form-box-button
   +button($blue-button, $blue-button, $main-color)

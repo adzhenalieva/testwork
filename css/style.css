@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   color: #ffffff;
   background: #ffffff;
@@ -84,7 +85,7 @@ header {
 .main-block {
   background: url(../images/main-pic.jpg) no-repeat 0 0;
   background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 64px;
 }
 
 .main-text {
@@ -93,14 +94,14 @@ header {
 }
 @media screen and (min-width: 980px) {
   .main-text {
-    padding: 107px 156px 120px;
+    padding: 89px 156px 120px;
   }
 }
 .main-text h1 {
   font-size: 48px;
   font-weight: 700;
   display: inline-block;
-  margin: 0 0 5px 0;
+  margin: 16px 0 3px 0;
 }
 @media screen and (min-width: 980px) {
   .main-text h1 {
@@ -153,7 +154,7 @@ header {
   }
 }
 .form-box .form-row {
-  margin: 30px auto;
+  margin: 25px auto;
   width: 100%;
 }
 @media screen and (min-width: 1114px) {
@@ -186,8 +187,15 @@ header {
   display: none;
 }
 
+.checkbox-div {
+  margin-bottom: 70px;
+}
 .checkbox-div a {
   color: #629fd1;
+}
+.checkbox-div p {
+  margin: 6px auto 36px;
+  font-weight: 300;
 }
 
 .checkbox {
@@ -208,6 +216,7 @@ header {
 .form-box-title {
   color: #3c434d;
   font-size: 36px;
+  margin: 25px auto;
 }
 
 .form-box-button {
@@ -220,5 +229,80 @@ header {
 }
 
 .items-wrap {
-  border: 1px solid #dee4ea;
+  border-top: 1px solid #dee4ea;
+  border-bottom: 1px solid #dee4ea;
+  padding: 67px 0;
+}
+
+.items {
+  color: #80909c;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+
+.item {
+  padding: 45px 15px 15px;
+  margin: 0 15px 25px 15px;
+  position: relative;
+  line-height: 1.7;
+  width: 100%;
+}
+@media screen and (min-width: 980px) {
+  .item {
+    width: 45%;
+    padding: 0 55px 0;
+    margin: 0 15px 5px 15px;
+  }
+}
+.item p {
+  margin: 14px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.item-icon {
+  position: absolute;
+  font-size: 45px;
+  color: #629fd1;
+  top: 0;
+  left: 50%;
+  margin-left: -30px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+@media screen and (min-width: 1114px) {
+  .item-icon {
+    top: 27px;
+    left: 0;
+  }
+}
+
+.item-icon-1::before {
+  content: "";
+}
+
+.item-icon-2::before {
+  content: "";
+}
+
+.item-icon-3::before {
+  content: "";
+}
+
+.item-icon-4::before {
+  content: "";
+}
+
+.items-title {
+  color: #3c434d;
+  font-size: 48px;
+  text-align: center;
+  margin: 40px 0 34px;
+}
+
+.items-subtitle {
+  color: #3c434d;
+  font-size: 20px;
+  margin-bottom: 0;
 }

@@ -23,19 +23,7 @@
     margin: 0 0 40px 0
     & span
       font-size: 16px
-
-%button
-  padding: 20px 40px
-  background: transparent
-  border: 1px solid $main-color
-  border-radius: 3px
-  color: $main-color
-  margin: 0 0 0 36px
-
 .blue-button
-  @extend %button
-  background: $blue-button
-  border: 1px solid $blue-button
-
+  +button($blue-button, $blue-button, $main-color)
 .transparent-button
-  @extend %button
+  +button(transparent, $main-color, $main-color)

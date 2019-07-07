@@ -1,0 +1,58 @@
+.form
+  text-align: center
+
+.form-box
+  color: #b2c1cc
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  margin: 0 auto
+  +lg
+    width: 570px
+  & .form-row
+    margin: 30px auto
+    width: 100%
+    +lg
+      width: 49%
+    & input
+      padding: 15px 25px
+      color: #b2c1cc
+      border: 1px solid #b2c1cc
+      border-radius: 3px
+    & select
+      padding: 15px 45px
+      color: #b2c1cc
+      border: 1px solid #b2c1cc
+      border-radius: 3px
+      background-image: url(../images/select-arrow.png)
+      background-position: 94% 50%
+      background-repeat: no-repeat
+      -webkit-appearance: none
+      -moz-appearance: none
+      text-indent: 0.01px
+      text-overflow: ''
+      -ms-appearance: none
+      appearance: none !important
+    & select::-ms-expand
+      display: none
+.checkbox-div a
+  color: $blue-button
+.checkbox
+  display: none
+  & + label span
+    display: inline-block
+    height: 22px
+    width: 22px
+    margin-right: 10px
+    background: url(../images/checkbox.png) 0 0 no-repeat
+    vertical-align: middle
+  &:checked + label span
+    background: url(../images/checkbox-checked.png) 0 0 no-repeat
+
+.form-box-title
+  color: $titles
+  font-size: 36px
+
+.form-box-button
+  +button($blue-button, $blue-button, $main-color)
+

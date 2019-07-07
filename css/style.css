@@ -5,6 +5,7 @@ body {
   line-height: 1.3;
   min-width: 320px;
   font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -117,16 +118,107 @@ header {
   font-size: 16px;
 }
 
-.blue-button, .transparent-button {
+.blue-button {
+  padding: 20px 40px;
+  background: #629fd1;
+  border: 1px solid #629fd1;
+  border-radius: 3px;
+  color: #ffffff;
+  margin: 0 0 15px 36px;
+}
+
+.transparent-button {
   padding: 20px 40px;
   background: transparent;
   border: 1px solid #ffffff;
   border-radius: 3px;
   color: #ffffff;
-  margin: 0 0 0 36px;
+  margin: 0 0 15px 36px;
 }
 
-.blue-button {
+.form {
+  text-align: center;
+}
+
+.form-box {
+  color: #b2c1cc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1114px) {
+  .form-box {
+    width: 570px;
+  }
+}
+.form-box .form-row {
+  margin: 30px auto;
+  width: 100%;
+}
+@media screen and (min-width: 1114px) {
+  .form-box .form-row {
+    width: 49%;
+  }
+}
+.form-box .form-row input {
+  padding: 15px 25px;
+  color: #b2c1cc;
+  border: 1px solid #b2c1cc;
+  border-radius: 3px;
+}
+.form-box .form-row select {
+  padding: 15px 45px;
+  color: #b2c1cc;
+  border: 1px solid #b2c1cc;
+  border-radius: 3px;
+  background-image: url(../images/select-arrow.png);
+  background-position: 94% 50%;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  -ms-appearance: none;
+  appearance: none !important;
+}
+.form-box .form-row select::-ms-expand {
+  display: none;
+}
+
+.checkbox-div a {
+  color: #629fd1;
+}
+
+.checkbox {
+  display: none;
+}
+.checkbox + label span {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  background: url(../images/checkbox.png) 0 0 no-repeat;
+  vertical-align: middle;
+}
+.checkbox:checked + label span {
+  background: url(../images/checkbox-checked.png) 0 0 no-repeat;
+}
+
+.form-box-title {
+  color: #3c434d;
+  font-size: 36px;
+}
+
+.form-box-button {
+  padding: 20px 40px;
   background: #629fd1;
   border: 1px solid #629fd1;
+  border-radius: 3px;
+  color: #ffffff;
+  margin: 0 0 15px 36px;
+}
+
+.items-wrap {
+  border: 1px solid #dee4ea;
 }

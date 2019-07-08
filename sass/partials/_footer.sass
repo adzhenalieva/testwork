@@ -1,36 +1,61 @@
 footer
   background: $header-bg
-  padding: 17px 0 5px
+  padding: 17px 0 24px
   color: #80909c
+  position: relative
+  & span
+    margin: 0
+    +tablet
+      margin: 0 0 0 23px
 
 .footer
   display: flex
   flex-wrap: wrap
   margin: 0 15px 80px
+  line-height: 1.7
+
+.footer-border
+  border-top: 1px solid #80909c
+  position: absolute
+  width: 100%
+  bottom: 15%
+  left: 0
+  +tablet
+    bottom: 22%
 
 .footer-div
   width: 100%
   +tablet
-    width: 23%
+    width: 25%
 
 .footer-div-1
   width: 100%
   +tablet
     width: 50%
+  & p
+    margin: 12px 8px
 
 .footer-form
+  padding: 9px 0
+
   & input
-    padding: 15px 25px
+    padding: 15px 36px
     color: #b2c1cc
     border: 1px solid #b2c1cc
     border-radius: 3px
     background: transparent
+    margin: 0 9px 20px
   & button
     +button($blue-button, $blue-button, $main-color)
-    padding: 15px 40px
+    padding: 15px 77px
+    margin: 0 0 15px 10px
+    +lg
+      padding: 15px 36px
+      margin: 0 0 15px 19px
 
 .footer-logo
   +a
+  padding: 28px 48px 0
 
 .footer-logo::before
   content: ""
@@ -38,25 +63,25 @@ footer
   position: absolute
   height: 30px
   width: 30px
-  top: 34px
-  left: 25px
+  top: 37px
+  left: 9px
 
 .footer-subtitle
   color: $main-color
   font-size: 20px
+  margin: 37px 37px 6px
 
 .footer-link
   display: block
   text-decoration: none
   color: #80909c
-  margin: 0 0 10px 0
+  margin: 0 0 7px 38px
 
 .footer-icons
   margin-bottom: 20px
   +tablet
     float: right
-    margin-right: 196px
-    margin-bottom: 0
+    margin: 0
 
 %social-media
   display: inline-block

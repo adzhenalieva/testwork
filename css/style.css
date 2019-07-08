@@ -19,6 +19,9 @@ body {
 header {
   background: #3c434d;
 }
+header .container {
+  position: relative;
+}
 
 .logo {
   font-size: 28px;
@@ -46,12 +49,12 @@ header {
   list-style: none;
   margin: 0;
   padding: 90px 0 17px;
-  text-align: center;
   position: relative;
 }
 @media screen and (min-width: 1114px) {
   .main-nav {
-    padding: 26px 0 16px;
+    padding: 40px 0 16px;
+    margin: 0 10px 0 341px;
   }
 }
 .main-nav li {
@@ -73,21 +76,48 @@ header {
 .main-nav li a:hover {
   color: #ffffff;
 }
-.main-nav li .profile {
-  color: #ffffff;
+
+.profile-div {
+  position: absolute;
+  top: 23px;
+  right: 10px;
 }
-.main-nav li .profile-image {
+@media screen and (min-width: 1114px) {
+  .profile-div {
+    right: 0;
+  }
+}
+
+.profile-notifications {
+  text-align: center;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  top: -4px;
+  right: 87px;
+  background: url(../images/profile-notifications.png) 50% 50% no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.profile {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.profile-image {
   border-radius: 50%;
   vertical-align: middle;
   horiz-align: right;
   height: 55px;
   width: 55px;
+  margin: 0 10px;
 }
 
 .main-block {
   background: url(../images/main-pic.jpg) no-repeat 0 0;
   background-size: cover;
-  margin-bottom: 64px;
+  margin: 0 auto 64px;
 }
 
 .main-text {
@@ -103,11 +133,11 @@ header {
   font-size: 48px;
   font-weight: 700;
   display: inline-block;
-  margin: 16px 0 3px 0;
+  margin: 16px auto 3px;
 }
 @media screen and (min-width: 980px) {
   .main-text h1 {
-    padding: 0px 6px;
+    padding: 0 6px;
   }
 }
 .main-text p {
@@ -162,16 +192,17 @@ header {
 @media screen and (min-width: 1114px) {
   .form-box .form-row {
     width: 49%;
+    margin: 25px auto 5px;
   }
 }
 .form-box .form-row input {
-  padding: 15px 25px;
+  padding: 20px 35px;
   color: #b2c1cc;
   border: 1px solid #b2c1cc;
   border-radius: 3px;
 }
 .form-box .form-row select {
-  padding: 15px 45px;
+  padding: 20px 58px;
   color: #b2c1cc;
   border: 1px solid #b2c1cc;
   border-radius: 3px;
@@ -196,7 +227,7 @@ header {
   color: #629fd1;
 }
 .checkbox-div p {
-  margin: 6px auto 36px;
+  margin: 20px auto 37px;
   font-weight: 300;
 }
 
@@ -218,7 +249,7 @@ header {
 .form-box-title {
   color: #3c434d;
   font-size: 36px;
-  margin: 25px auto;
+  margin: 32px auto;
 }
 
 .form-box-button {
@@ -241,6 +272,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 0 15px;
+  justify-content: space-around;
 }
 
 .item {
@@ -254,7 +286,7 @@ header {
   .item {
     width: 45%;
     padding: 0 55px 0;
-    margin: 0 15px 5px 15px;
+    margin: 0 0 5px 43px;
   }
 }
 .item p {
@@ -315,8 +347,14 @@ header {
 @media screen and (min-width: 1114px) {
   .crew-wrap {
     padding: 67px 0;
-    margin: 0 0 83px 0;
+    margin: 0 auto 83px auto;
   }
+}
+
+.arrow, .crews .arrow-left, .crews .arrow-right {
+  position: absolute;
+  width: 15px;
+  height: 15px;
 }
 
 .crews {
@@ -326,6 +364,29 @@ header {
   justify-content: space-around;
   margin: 0 15px;
   text-align: center;
+  position: relative;
+}
+.crews .arrow-left {
+  display: none;
+}
+@media screen and (min-width: 980px) {
+  .crews .arrow-left {
+    background: url(../images/arrow-left.png) no-repeat 0 0;
+    display: inline-block;
+    top: 77px;
+    left: 21px;
+  }
+}
+.crews .arrow-right {
+  display: none;
+}
+@media screen and (min-width: 980px) {
+  .crews .arrow-right {
+    background: url(../images/arrow-right.png) no-repeat 0 0;
+    display: inline-block;
+    top: 77px;
+    right: 21px;
+  }
 }
 
 .crew-div {
@@ -338,8 +399,8 @@ header {
 @media screen and (min-width: 980px) {
   .crew-div {
     width: 30%;
-    padding: 0 0;
-    margin: 0 10px 5px 10px;
+    padding: 0 10px 0 15px;
+    margin: 0 5px 5px 5px;
   }
 }
 .crew-div p {
@@ -352,6 +413,12 @@ header {
   border-radius: 50%;
   width: 170px;
   height: 170px;
+  margin: 0;
+}
+@media screen and (min-width: 1114px) {
+  .crew-image {
+    margin: 0 auto;
+  }
 }
 
 .crew-title {
@@ -364,19 +431,47 @@ header {
 .crew-subtitle {
   color: #3c434d;
   font-size: 20px;
-  margin: 14px 0 0;
+  margin: 14px 0 0 0;
+}
+@media screen and (min-width: 1114px) {
+  .crew-subtitle {
+    margin: 14px 0 0 30px;
+  }
 }
 
 footer {
   background: #3c434d;
-  padding: 17px 0 5px;
+  padding: 17px 0 24px;
   color: #80909c;
+  position: relative;
+}
+footer span {
+  margin: 0;
+}
+@media screen and (min-width: 980px) {
+  footer span {
+    margin: 0 0 0 23px;
+  }
 }
 
 .footer {
   display: flex;
   flex-wrap: wrap;
   margin: 0 15px 80px;
+  line-height: 1.7;
+}
+
+.footer-border {
+  border-top: 1px solid #80909c;
+  position: absolute;
+  width: 100%;
+  bottom: 15%;
+  left: 0;
+}
+@media screen and (min-width: 980px) {
+  .footer-border {
+    bottom: 22%;
+  }
 }
 
 .footer-div {
@@ -384,7 +479,7 @@ footer {
 }
 @media screen and (min-width: 980px) {
   .footer-div {
-    width: 23%;
+    width: 25%;
   }
 }
 
@@ -396,13 +491,20 @@ footer {
     width: 50%;
   }
 }
+.footer-div-1 p {
+  margin: 12px 8px;
+}
 
+.footer-form {
+  padding: 9px 0;
+}
 .footer-form input {
-  padding: 15px 25px;
+  padding: 15px 36px;
   color: #b2c1cc;
   border: 1px solid #b2c1cc;
   border-radius: 3px;
   background: transparent;
+  margin: 0 9px 20px;
 }
 .footer-form button {
   padding: 20px 40px;
@@ -411,7 +513,14 @@ footer {
   border-radius: 3px;
   color: #ffffff;
   margin: 0 0 15px 36px;
-  padding: 15px 40px;
+  padding: 15px 77px;
+  margin: 0 0 15px 10px;
+}
+@media screen and (min-width: 1114px) {
+  .footer-form button {
+    padding: 15px 36px;
+    margin: 0 0 15px 19px;
+  }
 }
 
 .footer-logo {
@@ -423,6 +532,7 @@ footer {
   text-decoration: none;
   padding: 33px 62px 31px;
   position: relative;
+  padding: 28px 48px 0;
 }
 
 .footer-logo::before {
@@ -431,20 +541,21 @@ footer {
   position: absolute;
   height: 30px;
   width: 30px;
-  top: 34px;
-  left: 25px;
+  top: 37px;
+  left: 9px;
 }
 
 .footer-subtitle {
   color: #ffffff;
   font-size: 20px;
+  margin: 37px 37px 6px;
 }
 
 .footer-link {
   display: block;
   text-decoration: none;
   color: #80909c;
-  margin: 0 0 10px 0;
+  margin: 0 0 7px 38px;
 }
 
 .footer-icons {
@@ -453,8 +564,7 @@ footer {
 @media screen and (min-width: 980px) {
   .footer-icons {
     float: right;
-    margin-right: 196px;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 

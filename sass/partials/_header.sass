@@ -1,5 +1,7 @@
 header
   background: $header-bg
+  & .container
+    position: relative
 
 .logo
   +a
@@ -18,10 +20,10 @@ header
   list-style: none
   margin: 0
   padding: 90px 0 17px
-  text-align: center
   position: relative
   +lg
-    padding: 26px 0 16px
+    padding: 40px 0 16px
+    margin: 0 10px 0 341px
   & li
     display: inline-block
     +lg
@@ -35,14 +37,36 @@ header
       padding: 4px 14px 6px 14px
     & a:hover
       color: $main-color
-    & .profile
-      color: $main-color
-    & .profile-image
-      border-radius: 50%
-      vertical-align: middle
-      horiz-align: right
-      height: 55px
-      width: 55px
+
+.profile-div
+  position: absolute
+  top: 23px
+  right: 10px
+  +lg
+    right: 0
+
+.profile-notifications
+  text-align: center
+  position: absolute
+  font-size: 14px
+  font-weight: 400
+  top: -4px
+  right: 87px
+  background: url(../images/profile-notifications.png) 50% 50% no-repeat
+  width: 25px
+  height: 25px
+
+.profile
+  color: $main-color
+  text-decoration: none
+
+.profile-image
+  border-radius: 50%
+  vertical-align: middle
+  horiz-align: right
+  height: 55px
+  width: 55px
+  margin: 0 10px
 
 
 

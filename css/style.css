@@ -49,13 +49,26 @@ header .container {
   display: none;
   list-style: none;
   margin: 0;
-  padding: 100px 0 17px;
+  padding: 120px 0 17px;
   position: relative;
+  text-align: right;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 680px) {
   .main-nav {
     display: block;
+    text-align: left;
+    padding: 100px 0 16px;
+    margin: 0 10px 0 10px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .main-nav {
     padding: 40px 0 16px;
+    margin: 0 10px 0 240px;
+  }
+}
+@media screen and (min-width: 1114px) {
+  .main-nav {
     margin: 0 10px 0 341px;
   }
 }
@@ -63,7 +76,7 @@ header .container {
   margin: 5px 0;
   padding: 0 4px 0 3px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 980px) {
   .main-nav li {
     display: inline-block;
     margin: 0;
@@ -80,18 +93,15 @@ header .container {
 }
 
 .profile-div {
+  display: none;
   position: absolute;
-  top: 25px;
-  right: 0px;
+  right: 15px;
+  top: 60px;
 }
 @media screen and (min-width: 680px) {
   .profile-div {
-    top: 10px;
-    right: 65px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .profile-div {
+    display: block;
+    position: absolute;
     right: 0;
     top: 23px;
   }
@@ -130,7 +140,7 @@ header .container {
   top: 0;
   right: 3px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 680px) {
   .mobile-menu,
   .mobile-menu-close {
     display: none;
@@ -204,7 +214,7 @@ header .container {
   justify-content: space-evenly;
   margin: 0 auto;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1114px) {
   .form-box {
     width: 570px;
   }
@@ -213,7 +223,7 @@ header .container {
   margin: 25px auto;
   width: 100%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1114px) {
   .form-box .form-row {
     width: 49%;
     margin: 25px auto 5px;
@@ -329,7 +339,7 @@ header .container {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1114px) {
   .item-icon {
     top: 27px;
     left: 0;
@@ -368,7 +378,7 @@ header .container {
 .crew-wrap {
   padding: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1114px) {
   .crew-wrap {
     padding: 67px 0;
     margin: 0 auto 110px auto;
@@ -411,7 +421,7 @@ header .container {
   height: 170px;
   margin: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1114px) {
   .crew-image {
     margin: 0 auto;
   }
@@ -429,7 +439,7 @@ header .container {
   font-size: 20px;
   margin: 14px 0 0 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1114px) {
   .crew-subtitle {
     margin: 14px 0 0 30px;
   }
@@ -534,7 +544,7 @@ footer span {
   padding: 15px 77px;
   margin: 0 0 15px 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1114px) {
   .footer-form button {
     padding: 15px 36px;
     margin: 0 0 15px 19px;

@@ -2,11 +2,7 @@
   padding: 0
   +lg
     padding: 67px 0
-    margin: 0 auto 83px auto
-.arrow
-  position: absolute
-  width: 15px
-  height: 15px
+    margin: 0 auto 110px auto
 
 .crews
   color: #80909c
@@ -16,23 +12,6 @@
   margin: 0 15px
   text-align: center
   position: relative
-
-  & .arrow-left
-      @extend .arrow
-      display: none
-      +tablet
-        background: url(../images/arrow-left.png) no-repeat 0 0
-        display: inline-block
-        top: 77px
-        left: 21px
-  & .arrow-right
-      @extend .arrow
-      display: none
-      +tablet
-        background: url(../images/arrow-right.png) no-repeat 0 0
-        display: inline-block
-        top: 77px
-        right: 21px
 
 .crew-div
   padding: 45px 15px 15px
@@ -69,3 +48,22 @@
   margin: 14px 0 0 0
   +lg
     margin: 14px 0 0 30px
+
+.slick-arrow
+  width: 26px
+  height: 24px
+  background-color: transparent
+  background-repeat: no-repeat
+  font-size: 0
+  border: none
+  position: absolute
+  top: 26%
+
+.slick-prev
+  background-image: url(../images/arrow-left.png)
+  z-index: 100
+  left: 2%
+
+.slick-next
+  background-image: url(../images/arrow-right.png)
+  right: 0%

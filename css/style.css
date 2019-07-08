@@ -46,25 +46,27 @@ header .container {
 }
 
 .main-nav {
+  display: none;
   list-style: none;
   margin: 0;
-  padding: 90px 0 17px;
+  padding: 100px 0 17px;
   position: relative;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .main-nav {
+    display: block;
     padding: 40px 0 16px;
     margin: 0 10px 0 341px;
   }
 }
 .main-nav li {
-  display: inline-block;
-  margin: 0;
+  margin: 5px 0;
   padding: 0 4px 0 3px;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .main-nav li {
     display: inline-block;
+    margin: 0;
   }
 }
 .main-nav li a {
@@ -79,12 +81,19 @@ header .container {
 
 .profile-div {
   position: absolute;
-  top: 23px;
-  right: 10px;
+  top: 25px;
+  right: 0px;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 680px) {
+  .profile-div {
+    top: 10px;
+    right: 65px;
+  }
+}
+@media screen and (min-width: 1024px) {
   .profile-div {
     right: 0;
+    top: 23px;
   }
 }
 
@@ -108,10 +117,25 @@ header .container {
 .profile-image {
   border-radius: 50%;
   vertical-align: middle;
-  horiz-align: right;
   height: 55px;
   width: 55px;
   margin: 0 10px;
+}
+
+.mobile-menu,
+.mobile-menu-close {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 3px;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-menu,
+  .mobile-menu-close {
+    display: none;
+    font-size: 0;
+  }
 }
 
 .main-block {
@@ -180,7 +204,7 @@ header .container {
   justify-content: space-evenly;
   margin: 0 auto;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .form-box {
     width: 570px;
   }
@@ -189,7 +213,7 @@ header .container {
   margin: 25px auto;
   width: 100%;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .form-box .form-row {
     width: 49%;
     margin: 25px auto 5px;
@@ -305,7 +329,7 @@ header .container {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .item-icon {
     top: 27px;
     left: 0;
@@ -344,17 +368,11 @@ header .container {
 .crew-wrap {
   padding: 0;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .crew-wrap {
     padding: 67px 0;
-    margin: 0 auto 83px auto;
+    margin: 0 auto 110px auto;
   }
-}
-
-.arrow, .crews .arrow-left, .crews .arrow-right {
-  position: absolute;
-  width: 15px;
-  height: 15px;
 }
 
 .crews {
@@ -365,28 +383,6 @@ header .container {
   margin: 0 15px;
   text-align: center;
   position: relative;
-}
-.crews .arrow-left {
-  display: none;
-}
-@media screen and (min-width: 980px) {
-  .crews .arrow-left {
-    background: url(../images/arrow-left.png) no-repeat 0 0;
-    display: inline-block;
-    top: 77px;
-    left: 21px;
-  }
-}
-.crews .arrow-right {
-  display: none;
-}
-@media screen and (min-width: 980px) {
-  .crews .arrow-right {
-    background: url(../images/arrow-right.png) no-repeat 0 0;
-    display: inline-block;
-    top: 77px;
-    right: 21px;
-  }
 }
 
 .crew-div {
@@ -415,7 +411,7 @@ header .container {
   height: 170px;
   margin: 0;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .crew-image {
     margin: 0 auto;
   }
@@ -433,10 +429,32 @@ header .container {
   font-size: 20px;
   margin: 14px 0 0 0;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .crew-subtitle {
     margin: 14px 0 0 30px;
   }
+}
+
+.slick-arrow {
+  width: 26px;
+  height: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  font-size: 0;
+  border: none;
+  position: absolute;
+  top: 26%;
+}
+
+.slick-prev {
+  background-image: url(../images/arrow-left.png);
+  z-index: 100;
+  left: 2%;
+}
+
+.slick-next {
+  background-image: url(../images/arrow-right.png);
+  right: 0%;
 }
 
 footer {
@@ -516,7 +534,7 @@ footer span {
   padding: 15px 77px;
   margin: 0 0 15px 10px;
 }
-@media screen and (min-width: 1114px) {
+@media screen and (min-width: 1024px) {
   .footer-form button {
     padding: 15px 36px;
     margin: 0 0 15px 19px;

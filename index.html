@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 </head>
 <body>
 <header>
@@ -15,6 +16,7 @@
         <a href="#" class="logo">
             Bubble
         </a>
+        <span id="menu" class="mobile-menu">&#9776;</span>
         <nav>
             <ul class="main-nav">
                 <li><a href="#">Услуги сервиса</a></li>
@@ -49,10 +51,10 @@
                 <input class="field" required type="text" placeholder="Имя">
             </div>
             <div class="form-row">
-                <input class="field" type="email" placeholder="E-mail">
+                <input class="field" required type="email" placeholder="E-mail">
             </div>
             <div class="form-row">
-                <input class="field-area field" placeholder="Телефон">
+                <input class="field-area field" required placeholder="Телефон">
             </div>
             <div class="form-row">
                 <select class="field-area field">
@@ -60,7 +62,7 @@
                 </select>
             </div>
             <div class="checkbox-div">
-                <p><input class="checkbox" type="checkbox" id="permission"><label for="permission"><span></span>Принимаю
+                <p><input class="checkbox" required type="checkbox" id="permission"><label for="permission"><span></span>Принимаю
                     условия <a
                             href="#">пользовательского соглашения</a></label></p>
                 <button class="form-box-button">Отправить</button>
@@ -102,8 +104,21 @@
 <div class="container crew-wrap">
     <h3 class="crew-title">Наши сотрудники</h3>
     <div class="crews">
-        <a href="#"><span class="arrow-left"></span></a>
-        <a href="#"><span class="arrow-right"></span></a>
+        <div class="crew-div">
+            <img class="crew-image" src="images/crew-1.png" alt="crew">
+            <h6 class="crew-subtitle">Сергей Лапшин</h6>
+            <p>Руководитель отдела продаж. Главный помощник генерального директора Ui Team</p>
+        </div>
+        <div class="crew-div">
+            <img class="crew-image" src="images/crew-2.png" alt="crew">
+            <h6 class="crew-subtitle">Сергей Кан</h6>
+            <p>Руководитель отдела продаж. Главный помощник генерального директора Ui Team</p>
+        </div>
+        <div class="crew-div">
+            <img class="crew-image" src="images/crew-3.png" alt="crew">
+            <h6 class="crew-subtitle">Марина Безродова</h6>
+            <p>Руководитель отдела продаж. Главный помощник генерального директора Ui Team</p>
+        </div>
         <div class="crew-div">
             <img class="crew-image" src="images/crew-1.png" alt="crew">
             <h6 class="crew-subtitle">Сергей Лапшин</h6>
@@ -134,7 +149,7 @@
                     сокращайте времяи затраты для своего проекта.</p>
                 <form>
                     <div class="footer-form">
-                        <input class="field" type="email" placeholder="E-mail">
+                        <input class="field" type="email" required placeholder="E-mail">
                         <button>Подписаться</button>
                     </div>
                 </form>
@@ -164,5 +179,9 @@
         <span>© 2014-2016. Все права защищены. </span>
     </div>
 </footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>
